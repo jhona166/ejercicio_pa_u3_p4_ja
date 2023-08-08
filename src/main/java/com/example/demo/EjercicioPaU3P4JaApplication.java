@@ -82,7 +82,7 @@ public class EjercicioPaU3P4JaApplication implements CommandLineRunner {
 
 				LocalDateTime fecha = LocalDateTime.now();
 
-				List<FacturaReporte> reporteVentas = this.iDetalleFacturaService.buscaPorFecha(fecha, "Vestimenta", 2);
+				List<FacturaReporte> reporteVentas = this.iDetalleFacturaService.buscaPorFecha(fecha, "Varios", 2);
 				reporteVentas.forEach(v -> LOG.info("Venta: " + v));
 	}
 
