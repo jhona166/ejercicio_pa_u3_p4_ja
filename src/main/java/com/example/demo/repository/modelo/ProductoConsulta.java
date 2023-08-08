@@ -9,7 +9,6 @@ public class ProductoConsulta {
 
 	public ProductoConsulta() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public ProductoConsulta(String codigoBarra, String nombre, Integer stock) {

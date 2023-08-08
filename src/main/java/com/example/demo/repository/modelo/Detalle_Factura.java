@@ -10,11 +10,13 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="detalle_factura")
+@NamedQuery(name = "DetalleFactura.buscarPorFechaCantidad", query = "SELECT d FROM Detalle_Factura d.fecha=:datoFecha")
 public class Detalle_Factura {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_detalle")

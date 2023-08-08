@@ -8,12 +8,14 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.repository.modelo.Detalle_Factura;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
 import jakarta.transaction.Transactional;
 import jakarta.transaction.Transactional.TxType;
 @Repository
 @Transactional
+
 public class DetalleFacturaRepoImpl implements IDetalleFacturaRepo{
 	@PersistenceContext
 	private EntityManager entityManager;
